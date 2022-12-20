@@ -1,0 +1,217 @@
+  File
+  =======
+  File f=new File("abc.txt");
+      System.out.println(f.exists());
+      f.createNewFile();
+      System.out.println(f.exists());
+
+
+
+
+  File f=new File("tempdir");
+      System.out.println(f.exists());
+      f.mkdir();
+      System.out.println(f.exists());
+
+
+
+ //if tempdir is Already Created
+   File f=new File("tempdir", "temp.txt");
+      f.createNewFile();
+
+
+
+
+ /*WAP to display the names of all files and directories present in D:\FileIOPrograms
+     File f=new File("D:\\FileIOPrograms");
+     String []data=f.list();
+     int count=0;
+     for(String fileName:data){
+      count++;
+      System.out.println(fileName);
+     }
+     System.out.println("No of Files and Directries is ::"+count);
+  */
+
+
+
+  /*WAP to dispaly only file names
+    File f1=new File("D:\\FileIOPrograms");
+    String[] data=f1.list();
+    int count=0;
+    for(String fileName:data){
+      File f2=new File(f1,fileName);
+      if(f2.isFile()){
+        count++;
+        System.out.println(fileName);
+      }
+    }
+    System.out.println("No of Files is::"+count);
+  */
+
+
+
+
+
+  /*WAP to display only directory names
+     File f1=new File("D:\\FileIOPrograms");
+     String[] data=f1.list();
+     int count=0;
+     for(String fileName:data){
+       File f2=new File(f1,fileName);
+       if(f2.isDirectory()){
+         count++;
+         System.out.println(fileName);
+       }
+     }
+     System.out.println("No of Directries is::"+count);
+     */   
+
+
+
+FileWriter
+==========
+  FileWriter fw=new FileWriter("info.txt");
+    fw.write(73);
+    fw.write("Neuron\nTechNology");
+    fw.write("\n");
+    char[] ch={'a','b','c'};
+    fw.write(ch);
+    //It has amajor problem that is "\n" it varries from SYstem to System
+    fw.flush();
+    fw.close();  
+
+
+
+FileReader
+==========
+    FileReader fr=new FileReader("info.txt");
+    int i=fr.read();
+    while(i!=-1){
+      System.out.print((char)i);
+      i=fr.read();
+    }
+    fr.close(); 
+
+
+ //Read the content from Array
+ File f=new File("info.txt");
+
+    FileReader fr=new FileReader(f);
+    char []ch=new char[(int)f.length()];
+
+    fr.read(ch);
+    String data=new String(ch);
+    System.out.println(data);
+
+    fr.close();   
+
+
+BufferWriter
+=============
+  BufferedWriter bw= new BufferedWriter(new FileWriter("abc.txt"));
+   bw.write(73);
+   bw.write("neuron");
+   bw.newLine();
+   bw.write("technology");
+   bw.newLine();
+
+   char ch[]={'a','b','c','d'};
+   bw.write(ch);
+
+
+   bw.flush();
+   bw.close();
+
+
+BufferReader
+=============
+  BufferedReader br=new BufferedReader(new FileReader("abc.txt"));
+   String line=br.readLine();
+   while(line!=null){
+    System.out.println(line);
+    line=br.readLine();
+   }
+    
+   br.close();
+
+
+
+PrintWriter
+===========
+  File f=new File("cricket.txt");
+   PrintWriter out=new PrintWriter(f);
+
+   out.println("Vikash Katiyar");
+   out.println('M');
+   out.println(22);
+   out.println(53.6);
+   System.out.println(f.exists());
+   out.flush();
+   out.close(); 
+
+
+   //Read the Data from Cricket.txt File 
+   BufferedReader br=new BufferedReader(new FileReader("cricket.txt"));
+   String line=br.readLine();
+   while(line!=null){
+    System.out.println(line);
+    line=br.readLine();
+   }
+   br.close();
+
+
+ Practice Questions
+ ==================
+
+ /*file1.txt,file2.txt copy all the contents of file3.txt
+
+   PrintWriter pw=new PrintWriter("file3.txt");
+   BufferedReader br1=new BufferedReader(new FileReader("file1.txt"));
+   String line=br1.readLine();
+   while(line!=null){
+    pw.println(line);
+    line=br1.readLine();
+   }
+
+
+   BufferedReader br2=new BufferedReader(new FileReader("file2.txt"));
+    line=br2.readLine();
+   while(line!=null){
+    pw.println(line);
+    line=br2.readLine();
+   }
+
+   pw.flush();
+   br1.close();
+   br1.close();
+   pw.close();
+   */
+
+
+
+
+/*file1.txt.file2.txt copy one line from file1.txt and from file2.txt to file4.txt
+    PrintWriter pw=new PrintWriter("file4.txt");
+   BufferedReader br1=new BufferedReader(new FileReader("file1.txt"));
+   BufferedReader br2=new BufferedReader(new FileReader("file2.txt"));
+
+   String line1=br1.readLine();
+   String line2=br2.readLine();
+   while(line1!=null && line2!=null){
+    pw.println(line1);
+    pw.println(line2);
+    line1=br1.readLine();
+    line2=br2.readLine();
+
+    
+   }
+
+   pw.flush();
+    br1.close();
+    br2.close();
+*/
+
+
+
+
