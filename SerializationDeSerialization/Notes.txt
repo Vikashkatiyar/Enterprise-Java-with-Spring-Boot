@@ -1,0 +1,208 @@
+Example 1.
+==========
+/*
+        import java.io.*;
+
+        class Dog implements Serializable{
+            int i=10;
+            int j=20;
+            Dog(){
+                System.out.println("Constructer called from Dog");
+            }
+        }
+
+        class Cat implements Serializable{
+            int i=30;
+            transient int j=40;
+            Cat() {
+                System.out.println("Constructor Called from Cat");
+            }
+            
+        }
+        class TestApp { 
+            public static void main(String[] args)throws Exception
+            {
+                Dog d=new Dog();
+                Cat c=new Cat();
+
+
+                System.out.println("Serialization Started");
+                FileOutputStream fos=new FileOutputStream("abc.ser");
+                ObjectOutputStream oos=new ObjectOutputStream(fos);
+                oos.writeObject(d);
+                oos.writeObject(c);
+                System.out.println("Serialization ended");
+
+                System.out.println();
+
+
+                System.out.println("Deserialization Started");
+                FileInputStream fis=new FileInputStream("abc.ser");
+                ObjectInputStream ois=new ObjectInputStream(fis);
+                Dog d1=(Dog)ois.readObject();
+                Cat c1=(Cat)ois.readObject();
+
+                System.out.println("Deserialization Ended");
+                System.out.println(d1.i+"-------"+d1.j);
+                System.out.println(c1.i+"-------"+c1.j);
+
+            }
+        }
+*/
+
+Example 2.
+==========
+
+ /*
+            import java.io.*;
+
+        class Dog implements Serializable{
+            Cat c=new Cat();
+        }
+
+        class Cat implements Serializable{
+        
+            Rat r=new Rat();
+        }
+        class Rat implements Serializable
+        {
+            int i=10;
+        }
+        class TestApp { 
+            public static void main(String[] args)throws Exception
+            {
+                Dog d=new Dog();
+            
+
+
+                System.out.println("Serialization Started");
+                FileOutputStream fos=new FileOutputStream("abc.ser");
+                ObjectOutputStream oos=new ObjectOutputStream(fos);
+                oos.writeObject(d);
+                System.out.println("Serialization ended");
+
+
+                System.out.println();
+
+
+                System.out.println("Deserialization Started");
+                FileInputStream fis=new FileInputStream("abc.ser");
+                ObjectInputStream ois=new ObjectInputStream(fis);
+                Dog d1=(Dog)ois.readObject();
+                
+
+                System.out.println("Deserialization Ended");
+                System.out.println(d1.c.r.i);
+                
+
+            }
+        }
+ */
+
+ Example 3.(Customized Serialization)
+ ===========
+
+ /*
+                    import java.io.*;
+
+            class Account implements Serializable
+            {
+                String name="sachin";
+                transient String password="tendulkar";
+                transient int pin=4444;
+                private void writeObject(ObjectOutputStream oos) throws Exception
+                {
+                    oos.defaultWriteObject();
+                    String enPass=123+password;
+                    int enPin=1234+pin;
+                    oos.writeObject(enPass);
+                    oos.writeObject(enPin);
+
+                }
+
+                private void readObject(ObjectInputStream ois) throws Exception
+                {
+                    // System.out.println("I am getting called during Deserialization");
+                    ois.defaultReadObject();
+                    String enPass=(String)ois.readObject();
+                    password=enPass.substring(3);
+
+                    int enPin=(int)ois.readObject();
+                    pin=enPin-1234;
+
+                }
+            }
+
+            class TestApp { 
+                public static void main(String[] args)throws Exception
+                {
+                    
+                
+                    Account ac=new Account();
+
+                    System.out.println("Serialization Started");
+                    FileOutputStream fos=new FileOutputStream("abc.ser");
+                    ObjectOutputStream oos=new ObjectOutputStream(fos);
+                    oos.writeObject(ac);
+                    System.out.println("Serialization ended");
+
+
+                    System.out.println();
+
+
+                    System.out.println("Deserialization Started");
+                    FileInputStream fis=new FileInputStream("abc.ser");
+                    ObjectInputStream ois=new ObjectInputStream(fis);
+                    Account Ac=(Account)ois.readObject();
+                    System.out.println("Deserialization Ended");
+                    System.out.println(Ac.name+"-------"+Ac.password+"----"+Ac.pin);
+                    
+
+                }
+            }
+ */
+
+ Example 4.(Parent Child Relationship)
+ ==========
+
+ /*
+            import java.io.*;
+
+            class Animal implements Serializable
+            {
+                int i=10;
+            }
+            class Dog extends Animal
+            {
+            int j=20;
+            }
+
+            class TestApp { 
+                public static void main(String[] args)throws Exception
+                {
+                    
+                Dog d=new Dog();
+                    
+
+                    System.out.println("Serialization Started");
+                    FileOutputStream fos=new FileOutputStream("abc.ser");
+                    ObjectOutputStream oos=new ObjectOutputStream(fos);
+                    oos.writeObject(d);
+                    System.out.println("Serialization ended");
+
+
+                    System.out.println();
+
+
+                    System.out.println("Deserialization Started");
+                    FileInputStream fis=new FileInputStream("abc.ser");
+                    ObjectInputStream ois=new ObjectInputStream(fis);
+                    Dog d1=(Dog)ois.readObject();
+                    System.out.println("Deserialization Ended");
+
+                    System.out.println(d1.i+" ---- "+d1.j);
+                    
+
+                }
+            }
+ */
