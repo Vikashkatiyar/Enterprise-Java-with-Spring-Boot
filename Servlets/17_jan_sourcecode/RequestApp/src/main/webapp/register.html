@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register page</title>
+</head>
+<body bgcolor="green" text='white'>
+	<center>
+		<h1>INEURON INTELLIGENCE PRIVATE LIMITED: REGISTERATION FOR
+			STUDENTS</h1>
+	</center>
+	<form method="post" action="./reg">
+		<table align='center'>
+			<tr>
+				<th>NAME</th>
+				<td><input type='text' name='username' /></td>
+			</tr>
+			<tr>
+				<th>CONTACT NUMBER</th>
+				<td><input type='text' name='contactnumber' /></td>
+			</tr>
+			<tr>
+				<th>EMAIL ID</th>
+				<td><input type='text' name='emailid' /></td>
+			</tr>
+			<tr>
+				<th>Enter course Details</th>
+				<td><select name='course' multiple="multiple">
+						<option value='corejava'>Core java</option>
+						<option value='advancedjava'>Advanced java</option>
+						<option value='hibernate'>Hibernate</option>
+						<option value='Spring'>Spring</option>
+						<option value='Microservices'>Microservices</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type='submit' value='register' /></td>
+			</tr>
+
+		</table>
+
+	</form>
+</body>
+</html>
