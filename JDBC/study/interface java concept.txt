@@ -1,0 +1,28 @@
+INTERFACE CONCEPT
+
+
+interface A {
+	public static show();//only declare method in interface not declaring
+ 
+	}
+
+class B impliments A {
+	public static show(){//here we declare and define the method of interface
+		System.out.println("Hello");
+		}
+	public static display() {
+		System.out.println("Hi");
+		}
+	}
+
+//interface does have anything like constructar 
+//interface behave like class but we can not create object of the interface
+while we create refrence of the interface
+		A obj=new B();
+when we refrence of A interface then you can only access the method of interface
+		obj.show();//Hello
+when we call method of class B->
+		obj.display()//can not work
+While we make when object of clas B then we call both method 
+		obj.show()
+		obj.display()

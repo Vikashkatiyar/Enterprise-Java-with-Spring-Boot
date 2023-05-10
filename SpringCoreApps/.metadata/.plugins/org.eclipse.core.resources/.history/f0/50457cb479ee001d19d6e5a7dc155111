@@ -1,0 +1,16 @@
+package com.katiyar.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.katiyar.controller.IEmployeeController;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext(
+				"com/katiyar/cfg/applicationContext.xml");
+         
+		IEmployeeController 
+	}
+
+}

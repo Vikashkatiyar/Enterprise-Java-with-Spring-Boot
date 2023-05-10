@@ -1,0 +1,27 @@
+package com.katiyar.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.katiyar.controller.IEmployeeController;
+import com.katiyar.vo.*;
+import in.ineuron.main.List;
+import in.ineuron.main.Scanner;
+import in.ineuron.vo.EmployeeVO;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext(
+				"com/katiyar/cfg/applicationContext.xml");
+         
+		IEmployeeController controller=null;
+		controller=factory.getBean("controller", IEmployeeController.class);
+		
+		int choice=0;
+		String ename=null,eage=null,eaddress=null;
+		List<EmployeeVO> employees = null;
+		Scanner scanner = new Scanner(System.in);
+		
+	}
+
+}

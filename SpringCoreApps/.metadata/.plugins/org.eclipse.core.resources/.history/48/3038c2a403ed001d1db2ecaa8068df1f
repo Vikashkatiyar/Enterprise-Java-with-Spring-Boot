@@ -1,0 +1,5 @@
+package com.katiyar.dto;
+
+public class CustomerDTO {
+   
+}

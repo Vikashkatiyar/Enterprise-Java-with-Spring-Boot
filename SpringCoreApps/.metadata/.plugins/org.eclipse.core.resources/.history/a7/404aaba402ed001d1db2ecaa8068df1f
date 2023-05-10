@@ -1,0 +1,9 @@
+package com.katiyar.bo;
+
+public class CustomerBo {
+   private String customerName;
+   private String customerAddres;
+   private float pamt;
+   private float rate;
+   private float
+}

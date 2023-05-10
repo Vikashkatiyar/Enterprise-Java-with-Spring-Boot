@@ -1,0 +1,10 @@
+package com.katiyar.dto;
+
+public class CustomerDTO {
+   private String customerName;
+   private String customerAddress;
+   private float pamt;
+   private float rate;
+   private float time;
+   
+}

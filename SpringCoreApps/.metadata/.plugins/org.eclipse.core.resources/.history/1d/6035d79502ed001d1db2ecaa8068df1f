@@ -1,0 +1,6 @@
+package com.katiyar.bo;
+
+public class CustomerBo {
+   private String customerName;
+   private String customer
+}

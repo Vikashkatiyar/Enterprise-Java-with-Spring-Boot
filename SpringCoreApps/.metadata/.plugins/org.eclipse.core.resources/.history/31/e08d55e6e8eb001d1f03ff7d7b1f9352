@@ -1,0 +1,12 @@
+package in.ineuron.Test;
+
+import org.springframework.context.support.ResourceBundleMessageSource;
+
+public class ClientApp {
+
+	public static void main(String[] args) {
+		ResourceBundleMessageSource
+
+	}
+
+}

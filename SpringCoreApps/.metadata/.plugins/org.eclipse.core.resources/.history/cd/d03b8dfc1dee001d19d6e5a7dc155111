@@ -1,0 +1,9 @@
+package com.katiyar.service;
+
+import com.katiyar.dto.EmployeeDTO;
+
+public interface IEmployeeService {
+   
+	String save(EmployeeDTO dto);
+	
+}

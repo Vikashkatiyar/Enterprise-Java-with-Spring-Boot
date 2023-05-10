@@ -1,0 +1,6 @@
+package com.katiyar.controller;
+
+public interface IEmployeeController {
+    String save(EmployeeVO vo);
+    
+}

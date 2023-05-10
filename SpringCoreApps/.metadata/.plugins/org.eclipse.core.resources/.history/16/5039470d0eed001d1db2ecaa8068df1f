@@ -1,0 +1,5 @@
+package com.katiyar.controller;
+
+public class CustomerController {
+   ICustomer
+}

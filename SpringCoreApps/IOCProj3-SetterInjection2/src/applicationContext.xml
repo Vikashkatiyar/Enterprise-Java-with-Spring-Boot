@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- map-injection -->
+	<bean id='university' class="com.katiyar.bean.UniversityInfo" >
+		<property name="facultyDetails">
+			<map key-type="java.lang.Integer" value-type="java.lang.String">
+				<entry key="18" value="kohli" />
+				<entry key='19' value="Sachin" />
+			</map>
+		</property>
+		
+		<property name="dateInfo">
+			<map key-type="java.lang.String" value-type="java.util.Date">
+				<entry key="toDay" value="sysDate" />
+				<entry key='dob' value-ref="dobDate" />
+			</map>
+		</property>
+
+	</bean>
+
+</beans>

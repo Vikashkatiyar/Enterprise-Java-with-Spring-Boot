@@ -1,0 +1,6 @@
+package com.katiyar.service;
+
+public interface IEmployeeService {
+   
+	String save()
+}

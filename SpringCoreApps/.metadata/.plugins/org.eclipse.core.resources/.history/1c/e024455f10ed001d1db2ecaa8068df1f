@@ -1,0 +1,13 @@
+package com.katiyar.dao;
+
+import com.katiyar.bo.CustomerBo;
+
+public class CustomerMYSQLDAOImpl implements ICustomerDAO{
+
+	@Override
+	public int insert(CustomerBo bo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

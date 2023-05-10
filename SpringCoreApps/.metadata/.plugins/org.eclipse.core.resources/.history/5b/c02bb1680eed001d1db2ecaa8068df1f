@@ -1,0 +1,12 @@
+package com.katiyar.controller;
+
+import com.katiyar.dto.CustomerDTO;
+import com.katiyar.service.ICustomerMgmtService;
+
+public class CustomerController {
+   ICustomerMgmtService service;
+   
+   
+   CustomerDTO customerDTO=new CustomerDTO();
+   
+}

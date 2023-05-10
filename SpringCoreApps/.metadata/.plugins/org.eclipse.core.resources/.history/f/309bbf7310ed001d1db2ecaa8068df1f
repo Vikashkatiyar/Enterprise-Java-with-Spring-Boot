@@ -1,0 +1,16 @@
+package com.katiyar.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.katiyar.bo.CustomerBo;
+
+@Repository(value = )
+public class CustomerMYSQLDAOImpl implements ICustomerDAO{
+
+	@Override
+	public int insert(CustomerBo bo) {
+		
+		return 0;
+	}
+
+}

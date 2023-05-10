@@ -1,0 +1,48 @@
+package com.katiyar.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.katiyar.bo.EmployeeBO;
+import com.katiyar.dao.IEmployeeDAO;
+import com.katiyar.dto.EmployeeDTO;
+
+@Component("service")
+public class EmployeeServiceImpl implements IEmployeeService {
+    @Autowired
+	IEmployeeDAO dao;
+	
+    
+    @Override
+	public String save(EmployeeDTO dto) {
+		EmployeeBO 
+		return null;
+	}
+
+	@Override
+	public List<EmployeeDTO> findAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EmployeeDTO findById(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateByTd(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteById(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.katiyar.main;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		new ClassPathXml
+
+	}
+
+}

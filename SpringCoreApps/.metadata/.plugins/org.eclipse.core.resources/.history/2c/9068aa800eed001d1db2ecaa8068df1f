@@ -1,0 +1,15 @@
+package com.katiyar.controller;
+
+import org.springframework.stereotype.Component;
+
+import com.katiyar.dto.CustomerDTO;
+import com.katiyar.service.ICustomerMgmtService;
+
+@Component(value="controller")
+public class CustomerController {
+   ICustomerMgmtService service;
+   
+   
+   CustomerDTO customerDTO=new CustomerDTO();
+   
+}

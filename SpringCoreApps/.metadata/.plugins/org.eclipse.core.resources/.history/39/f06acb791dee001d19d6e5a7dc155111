@@ -1,0 +1,10 @@
+package com.katiyar.controller;
+
+import com.katiyar.vo.EmployeeVO;
+
+public interface IEmployeeController {
+    String save(EmployeeVO vo);
+    
+    
+    
+}

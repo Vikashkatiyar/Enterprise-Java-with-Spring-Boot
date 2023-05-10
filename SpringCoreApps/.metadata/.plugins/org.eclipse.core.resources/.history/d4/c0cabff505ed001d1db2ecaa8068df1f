@@ -1,0 +1,2 @@
+#DataSource information of MYSQL
+jdbc.driver=com.mysql

@@ -1,0 +1,62 @@
+package com.katiyar.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.katiyar.bo.EmployeeBO;
+
+public class EmployeeDaoImpl implements IEmployeeDAO {
+    @Autowired
+    @Qualifier("hikariDataSource")
+	private DataSource dataSource;
+	
+	@Override
+	public String save(EmployeeBO bo) {
+		int rowCount=0;
+		String SQL_INSERT_QUERY = "insert into employee(`ename`,`eage`,`eaddress`) values (?,?,?)";
+		try (Connection connection=dataSource.getConnection();
+				PreparedStatement pstmt=connection.prepareStatement(SQL_INSERT_QUERY)){
+			pstmt.setString(1, bo.getEname());
+			pstmt.setInt(2, bo.getAge());
+			pstmt.setString(3, bo.getEaddress());
+			
+			rowCount=pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return null;
+	}
+
+	@Override
+	public List<EmployeeBO> findAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EmployeeBO findById(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateById(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteById(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+#DataSource information of MYSQL
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql:///enterprisejavabatch
+jdbc.user=root
+jdbc.password=Vikash@#123
+
+choose.dao=MYSQLDAO

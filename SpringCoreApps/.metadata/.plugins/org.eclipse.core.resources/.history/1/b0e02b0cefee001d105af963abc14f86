@@ -1,0 +1,27 @@
+package com.katiyar.cfg;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+
+@Configuration
+@ComponentScan(basePackages = "com.katiyar")
+@PropertySource(value="com/katiyar/commons/application.properties")
+public class AppConfig {
+   @Autowired
+	private Environment environment;
+   
+   static {
+	   System.out.println("AppConfig.class file is loading");
+   }
+   
+   public AppConfig(){
+	   System.out.println("AppConfig.object is created :: Zero Param constructor");
+   }
+   
+   public DataSource getDataSou 
+	
+}

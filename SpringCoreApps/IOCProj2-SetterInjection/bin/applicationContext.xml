@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+
+	<!-- Configuring Target bean -->
+	<bean id="emp" class="com.katiyar.bean.Employee">
+	 <constructor-arg value="10" index="0"/>
+	 <constructor-arg value="sachin" index="1"/>
+	 <constructor-arg value="35000.05f"  index="2"/>
+		
+	</bean>
+</beans>

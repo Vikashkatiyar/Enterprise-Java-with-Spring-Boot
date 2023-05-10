@@ -1,0 +1,5 @@
+package com.katiyar.controller;
+
+public interface IEmployeeController {
+    
+}

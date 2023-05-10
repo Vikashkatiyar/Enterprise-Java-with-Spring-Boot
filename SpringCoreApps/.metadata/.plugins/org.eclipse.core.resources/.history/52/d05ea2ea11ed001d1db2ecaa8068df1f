@@ -1,0 +1,37 @@
+package com.katiyar.dao;
+
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.katiyar.bo.CustomerBo;
+
+@Repository(value = "MYSQLDAO")
+public class CustomerMYSQLDAOImpl implements ICustomerDAO{
+
+	private static final String CUSTOMER_INSERT_QUERY = "INSERT INTO SPRING_CUSTOMER(CNAME,CADDR,PAMT,INTRAMT)values(?,?,?,?)";
+	
+	@Autowired
+	private DataSource dataSource;
+	
+	
+	@Override
+	public int insert(CustomerBo bo) {
+		int count=0;
+		try(Connection connection=dataSource.getConnection()){
+			PreparedStatement pstmt=connection.prepareStatement(CUSTOMER_INSERT_QUERY);
+			
+			
+		}catch() {
+			
+		}
+		return 0;
+	}
+
+}

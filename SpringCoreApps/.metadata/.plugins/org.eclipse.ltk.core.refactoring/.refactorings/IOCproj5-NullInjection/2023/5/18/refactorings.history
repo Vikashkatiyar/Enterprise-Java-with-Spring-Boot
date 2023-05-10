@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;IOCproj5-NullInjection&apos;&#x0D;&#x0A;- Original project: &apos;IOCproj5-NullInjection&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IOCproj5-NullInjection/src/in.ineuron.bean&#x0D;&#x0A;     IOCproj5-NullInjection/src/in.ineuron.cfg&#x0D;&#x0A;     IOCproj5-NullInjection/src/in.ineuron.main" description="Delete elements" element1="/src&lt;in.ineuron.main" element2="/src&lt;in.ineuron" element3="/src&lt;in" element4="/src&lt;in.ineuron.cfg" element5="/src&lt;in.ineuron.bean" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1683150573012" subPackages="false" version="1.0"/>
+</session>

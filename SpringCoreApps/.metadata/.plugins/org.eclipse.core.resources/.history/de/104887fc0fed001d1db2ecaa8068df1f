@@ -1,0 +1,33 @@
+package com.katiyar.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.katiyar.dao.ICustomerDAO;
+import com.katiyar.dto.CustomerDTO;
+
+
+@Service(value = "service")
+public class CustomerMgmtServiceImpl implements ICustomerMgmtService{
+    
+	@Autowired
+	private ICustomerDAO dao;
+	
+	static {
+		System.out.println("CustomerMgmtServiceImpl.class file is loading...");
+	}
+	
+	public CustomerMgmtServiceImpl(ICustomerDAO dao)
+	{
+		System.out.println("CustomerMgmtServiceImpl::One Param constructor...");
+	}
+	
+	@Override
+	public String calculateSimpleInterest(CustomerDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+      
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;IOCproj5-NullInjection/src&apos;&#x0D;&#x0A;- Original project: &apos;IOCProj9-NullInjectionApp&apos;&#x0D;&#x0A;- Destination element: &apos;IOCproj5-NullInjection/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IOCProj9-NullInjectionApp/src/in.ineuron.bean&#x0D;&#x0A;     IOCProj9-NullInjectionApp/src/in.ineuron.cfg&#x0D;&#x0A;     IOCProj9-NullInjectionApp/src/in.ineuron.Test" description="Copy packages" destination="=IOCproj5-NullInjection/src" element1="/src&lt;in.ineuron.bean" element2="/src&lt;in.ineuron.cfg" element3="/src&lt;in.ineuron.Test" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1683150582981" version="1.0"/>
+</session>

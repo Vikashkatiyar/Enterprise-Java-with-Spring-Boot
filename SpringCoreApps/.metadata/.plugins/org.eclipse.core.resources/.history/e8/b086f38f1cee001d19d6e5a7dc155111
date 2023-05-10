@@ -1,0 +1,8 @@
+package com.katiyar.vo;
+
+public class EmployeeVO {
+    private String ename;
+    private String eaddress;
+    private String age;
+    p
+}

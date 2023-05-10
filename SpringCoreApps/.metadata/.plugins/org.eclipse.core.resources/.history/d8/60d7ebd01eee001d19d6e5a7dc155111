@@ -1,0 +1,9 @@
+package com.katiyar.dao;
+
+import com.katiyar.bo.EmployeeBO;
+
+public interface IEmployeeDAO {
+
+	
+	String save(EmployeeBO bo)
+}

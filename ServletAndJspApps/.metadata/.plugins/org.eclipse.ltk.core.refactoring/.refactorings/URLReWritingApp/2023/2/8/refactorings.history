@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;URLReWritingApp/src/main/webapp/login.html&apos; to &apos;index.html&apos;" description="Rename resource &apos;login.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/login.html" name="index.html" stamp="1676795271585" updateReferences="true"/>
+</session>

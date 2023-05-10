@@ -1,0 +1,5 @@
+package com.katiyar.vo;
+
+public class EmployeeVO {
+    
+}

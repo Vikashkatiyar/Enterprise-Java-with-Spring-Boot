@@ -1,0 +1,7 @@
+package com.katiyar.controller;
+
+import com.katiyar.service.ICustomerMgmtService;
+
+public class CustomerController {
+   ICustomerMgmtService
+}

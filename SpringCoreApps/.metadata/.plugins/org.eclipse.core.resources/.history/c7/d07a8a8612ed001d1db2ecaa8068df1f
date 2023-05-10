@@ -1,0 +1,27 @@
+package com.katiyar.main;
+
+import java.util.Scanner;
+
+public class ClientApp {
+
+	public static void main(String[] args) {
+		Scanner scanner= new Scanner(System.in);
+		
+		System.out.print("Enter the CustomerName :: ");
+		String customerName = scanner.next();
+
+		System.out.print("Enter the CustomerAddr :: ");
+		String customerAddress = scanner.next();
+
+		System.out.print("Enter the Principal Amount :: ");
+		String pamount = scanner.next();
+
+		System.out.print("Enter the Time period :: ");
+		String time = scanner.next();
+
+		System.out.print("Enter the Rate of Interest :: ");
+		String rate = scanner.next();
+
+	}
+
+}

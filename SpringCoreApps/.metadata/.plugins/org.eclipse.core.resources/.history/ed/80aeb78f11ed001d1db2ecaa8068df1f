@@ -1,0 +1,21 @@
+package com.katiyar.dao;
+
+import javax.sql.DataSource;
+
+import org.springframework.stereotype.Repository;
+
+import com.katiyar.bo.CustomerBo;
+
+@Repository(value = "MYSQLDAO")
+public class CustomerMYSQLDAOImpl implements ICustomerDAO{
+
+	private static final String CUSTOMER_INSERT_QUERY = "INSERT INTO SPRING_CUSTOMER(CNAME,CADDR,PAMT,INTRAMT)values(?,?,?,?)";
+	
+	private DataSource
+	@Override
+	public int insert(CustomerBo bo) {
+		
+		return 0;
+	}
+
+}

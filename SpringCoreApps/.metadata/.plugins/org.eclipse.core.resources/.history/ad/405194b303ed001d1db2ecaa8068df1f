@@ -1,0 +1,6 @@
+package com.katiyar.dto;
+
+public class CustomerDTO {
+   private String customerName;
+   private String customerAdd
+}

@@ -1,0 +1,8 @@
+package com.katiyar.bo;
+
+public class EmployeeBO {
+	private String ename;
+	private String eaddress;
+	private String age;
+	private String eid;
+}

@@ -1,0 +1,15 @@
+package com.katiyar.Test;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        FileSystemResource resource=new FileSystemResource("src\\applicationContext.xml");
+        XmlBeanFactory beanFactory=new XmlBeanFactory(resource);
+        
+	}
+
+}

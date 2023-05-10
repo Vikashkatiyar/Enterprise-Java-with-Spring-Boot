@@ -1,0 +1,15 @@
+package com.katiyar.dao;
+
+import com.katiyar.bo.EmployeeBO;
+import java.util.*;
+
+public interface IEmployeeDAO {
+
+	
+	String save(EmployeeBO bo);
+	
+	List<EmployeeBO> findAllEmployees();
+	
+	
+	
+}

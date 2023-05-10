@@ -1,0 +1,5 @@
+package com.katiyar.service;
+
+public interface ICustomerMgmtService {
+   public abstract String calculateSimple
+}

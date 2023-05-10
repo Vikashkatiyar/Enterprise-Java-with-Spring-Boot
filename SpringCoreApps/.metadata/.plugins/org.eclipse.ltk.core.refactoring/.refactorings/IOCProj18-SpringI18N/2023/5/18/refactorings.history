@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;SpringBean118N/src&apos;&#x0D;&#x0A;- Original project: &apos;IOCProj18-SpringI18N&apos;&#x0D;&#x0A;- Destination element: &apos;SpringBean118N/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IOCProj18-SpringI18N/src/in.ineuron.common&#x0D;&#x0A;     IOCProj18-SpringI18N/src/in.ineuron.cfg&#x0D;&#x0A;     IOCProj18-SpringI18N/src/in.ineuron.Test" description="Copy packages" destination="=SpringBean118N/src" element1="/src&lt;in.ineuron.common" element2="/src&lt;in.ineuron.cfg" element3="/src&lt;in.ineuron.Test" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1683362108607" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package com.katiyar.service;
+
+import com.katiyar.dao.ICustomerDAO;
+import com.katiyar.dto.CustomerDTO;
+
+public class CustomerMgmtServiceImpl implements ICustomerMgmtService{
+    
+	private ICustomerDAO dao;
+	
+	static {
+		System.out.println("CustomerMgmtServiceImpl.file ");
+	}
+	
+	@Override
+	public String calculateSimpleInterest(CustomerDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+      
+}

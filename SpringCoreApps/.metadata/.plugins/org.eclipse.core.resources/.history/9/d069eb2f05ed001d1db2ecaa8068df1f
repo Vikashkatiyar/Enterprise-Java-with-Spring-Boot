@@ -1,0 +1,5 @@
+package com.katiyar.dao;
+
+public interface ICustomerDAO {
+   public abstract int insert(CustromerBo bo;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.ineuron.cfg&apos; to &apos;MapInjection1/src&apos;&#x0D;&#x0A;- Original project: &apos;SpringConsoleProject&apos;&#x0D;&#x0A;- Destination element: &apos;MapInjection1/src&apos;&#x0D;&#x0A;- Original element: &apos;SpringConsoleProject/src/in.ineuron.cfg&apos;" description="Copy package" destination="=MapInjection1/src" element1="/src&lt;in.ineuron.cfg" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1683148708709" version="1.0"/>
+</session>

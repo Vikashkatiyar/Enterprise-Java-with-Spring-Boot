@@ -1,0 +1,17 @@
+package com.katiyar.service;
+
+import com.katiyar.dto.CustomerDTO;
+
+public class CustomerMgmtServiceImpl implements ICustomerMgmtService{
+    
+	private
+	
+	@Override
+	public String calculateSimpleInterest(CustomerDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+      
+}

@@ -1,0 +1,21 @@
+package com.katiyar.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.katiyar.dto.CustomerDTO;
+import com.katiyar.service.ICustomerMgmtService;
+
+@Component(value="controller")
+public class CustomerController {
+	
+	@Autowired
+   ICustomerMgmtService service;
+   
+   static {
+	   System.out.println("Controller class file is loading....");
+   }
+   
+   public String processResult(Customer)
+   
+}

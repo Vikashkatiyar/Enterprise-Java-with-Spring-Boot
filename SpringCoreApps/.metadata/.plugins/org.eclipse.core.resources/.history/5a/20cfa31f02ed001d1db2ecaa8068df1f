@@ -1,0 +1,7 @@
+package com.katiyar.vo;
+
+public class CustomerVo {
+    private String customerName;
+    
+    
+}
