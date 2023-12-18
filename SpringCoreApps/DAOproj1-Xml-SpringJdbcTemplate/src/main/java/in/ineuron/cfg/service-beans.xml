@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="service" class="/DAOproj1-Xml-SpringJdbcTemplate/src/main/java/in/ineuron/service/EmloyeeMgmtServiceImpl.java">
+    <constructor-arg ref="empDao"/>  
+ 		      
+     </bean>
+
+    
+
+</beans>

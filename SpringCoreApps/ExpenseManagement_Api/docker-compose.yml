@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  app:
+    image: vikash917/expencetrackerapi0.0.1
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.datasource.url=jdbc:mysql://db:3306/expencedb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+      - spring.datasource.username=admin
+      - spring.datasource.password=root
+
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.27
+    environment:
+        DATABASE_HOST: docker-mysql
+        DATABSE_PORT: 3306
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: expencedb
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: root
+
