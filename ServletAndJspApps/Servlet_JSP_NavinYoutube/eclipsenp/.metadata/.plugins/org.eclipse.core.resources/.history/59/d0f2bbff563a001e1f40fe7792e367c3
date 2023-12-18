@@ -1,0 +1,5 @@
+package multithredingClass;
+
+public class Thread2 implements Runnable{
+
+}

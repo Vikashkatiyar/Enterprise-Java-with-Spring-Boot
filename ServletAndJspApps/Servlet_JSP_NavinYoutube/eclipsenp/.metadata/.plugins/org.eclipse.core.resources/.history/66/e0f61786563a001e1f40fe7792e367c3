@@ -1,0 +1,15 @@
+package multithredingClass;
+
+public class Thread1 extends Thread{
+    
+	public Thread1(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void run() {
+		for(int i=0;i<5;i++) {
+			System.out.println("Inside Thread "+i);
+		}
+	}
+}

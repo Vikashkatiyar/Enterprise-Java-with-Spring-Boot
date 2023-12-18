@@ -1,0 +1,11 @@
+package multithredingClass;
+
+public class ThreadTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread1 thread1 = new Thread1();
+	}
+
+}
+
